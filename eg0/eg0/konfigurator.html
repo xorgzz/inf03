@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Style w JavaScript</title>
+	<link rel="stylesheet" href="styl6.css">
+</head>
+<body>
+	<div id="l">
+		<h1>Konfigurator Stylu</h1>
+		<p>
+			Podaj kolor tła
+			<br>
+			<button onclick="bgC('Indigo');" style="background-color: Indigo;">Indigo</button>
+			<button onclick="bgC('SteelBlue');" style="background-color: SteelBlue;">SteelBlue</button>
+			<button onclick="bgC('Olive');" style="background-color: Olive;">Olive</button>
+		</p>
+		<p>
+			Podaj kolor czcionki
+			<br>
+			<select id="fgC" onchange="fgC();">
+				<option>White</option>
+				<option>Tan</option>
+				<option>Bisque</option>
+				<option>Plum</option>
+			</select>
+		</p>
+		<p>
+			Podaj rozmiar czcionki w procentach,<br>np.: 200%
+			<br>
+			<input type="text" id="fs" onchange="fontSizeChange();" value="100%">
+		</p>
+		<p>
+			Czy rysunek ma mieć ramkę?
+			<br>
+			<input id="chck" onclick="frameDraw();" type="checkbox">
+			<label>Rysuj ramkę</label>
+		</p>
+		<p>
+			Jaki jest typ punktora listy?
+			<br>
+			<input onclick="bulletPoints('disc');" checked="1" name="rad" type="radio" value="disc"><label>dysk</label><br>
+			<input onclick="bulletPoints('square');" name="rad" type="radio" value="square"><label>kwadrat</label><br>
+			<input onclick="bulletPoints('circle');" name="rad" type="radio" value="circle"><label>okrąg</label><br>
+		</p>
+	</div>
+	<div id="r">
+		<img id="img" src="./gibraltar.jpg" alt="półwysep Gibraltar">
+		<ul id="list">
+			<li>element 1</li>
+			<li>element 2</li>
+			<li>element 3</li>
+		</ul>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>Excepteur sint occaecat cupidatat non proident,<br>sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	<footer>
+		Autor: Tymek Sochacki 4ta
+	</footer>
+	<script src="./script.js"></script>
+</body>
+</html>
